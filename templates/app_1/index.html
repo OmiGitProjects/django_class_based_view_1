@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block Content_ %}
+
+<div class="section">
+    <ul>
+        {% for post in all_post %}
+            <li>{{ post.text }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock Content_ %}
